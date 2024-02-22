@@ -17,18 +17,18 @@ Pod::Spec.new do |spec|
 
   spec.name         = "WPlayerKit"
   spec.version      = "1.0.1"
-  spec.summary      = "A short description of WPlayerKit."
+  spec.summary      = "My WPlayerKit."
   spec.ios.deployment_target = '11.0'
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                      测试提交第一个版本1.0.1
-                   DESC
+  # spec.description  = <<-DESC
+  #                     测试提交第一个版本1.0.1
+  #                  DESC
 
-  spec.homepage     = "https://github.com/wjasdk/WPlayerKit.git"
+  spec.homepage     = "git@github.com:wjasdk/WPlayerKit.git"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -81,7 +81,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/wjasdk/WPlayerKit.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "git@github.com:wjasdk/WPlayerKit.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -92,8 +92,13 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.vendored_frameworks = 'WPlayerKit.framework'  
+  spec.vendored_frameworks = "WPlayerKit.framework", "WPlayerKit"
  
+  spec.frameworks   = "Accelerate", "AudioToolbox", "AVFoundation", "CoreData", "CoreMedia", "CoreTelephony", "MetalKit", "MobileCoreServices", "OpenAL", "SystemConfiguration", "VideoToolbox"
+  # spec.vendored_libraries = "libBaseMedia_iOS.a", "libOTELProject.a"
+  # spec.libraries = "libc++", "libiconv"
+  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'armv7 arm64' }
+
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
