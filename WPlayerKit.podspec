@@ -92,7 +92,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.vendored_frameworks = "WPlayerKit.framework", "WPlayerKit"
+  spec.vendored_frameworks = "WPlayerKit.framework"
  
   spec.frameworks   = "Accelerate", "AudioToolbox", "AVFoundation", "CoreData", "CoreMedia", "CoreTelephony", "MetalKit", "MobileCoreServices", "OpenAL", "SystemConfiguration", "VideoToolbox"
   # spec.vendored_libraries = "libBaseMedia_iOS.a", "libOTELProject.a"
