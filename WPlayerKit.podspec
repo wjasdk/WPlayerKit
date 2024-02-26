@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   spec.requires_arc             = true
   # spec.frameworks               = 'Foundation', 'CoreBluetooth'
   # spec.source_files             = 'Framework/WPlayerKit.framework/Headers/*.{h}'
-  spec.ios.vendored_frameworks      = 'Framework/WPlayerKit.framework'
+  spec.vendored_frameworks      = 'Framework/WPlayerKit.framework'
   # spec.vendored_libraries       = "libBaseMedia_iOS.a", "libOTELProject.a"
   # spec.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
   # spec.public_header_files      = 'Framework/WPlayerKit.framework/Headers/*.{h,m}'
