@@ -1,0 +1,16 @@
+PODS:
+  - WPlayerKit (0.1.0)
+
+DEPENDENCIES:
+  - WPlayerKit (from `../`)
+
+EXTERNAL SOURCES:
+  WPlayerKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WPlayerKit: 666956aaaa071ed50972548167fd2098ab34ba11
+
+PODFILE CHECKSUM: 71ae93342b515c5b30ace01090a4652580028394
+
+COCOAPODS: 1.15.2

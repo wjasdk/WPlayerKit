@@ -1,0 +1,22 @@
+{
+  "name": "WPlayerKit",
+  "version": "0.1.0",
+  "summary": "A short description of WPlayerKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lishutian@wjacloud.com/WPlayerKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lishutian@wjacloud.com": "lishutian@wjacloud.com"
+  },
+  "source": {
+    "git": "https://github.com/lishutian@wjacloud.com/WPlayerKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "WPlayerKit/Classes/**/*"
+}
