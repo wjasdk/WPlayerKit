@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name                     = "WPlayerKit"
-  spec.version                  = "0.0.2"
+  spec.version                  = "0.0.3"
   spec.summary                  = "P2P音视频SDK framework"
   spec.description              = <<-DESC
                                   第一个版本
@@ -17,10 +17,10 @@ Pod::Spec.new do |spec|
   # spec.frameworks               = 'Foundation', 'CoreBluetooth'
   # spec.source_files             = 'Framework/WPlayerKit.framework/Headers/*.{h}'
   spec.ios.vendored_frameworks      = 'Framework/WPlayerKit.framework'
-  spec.vendored_libraries       = "libBaseMedia_iOS.a", "libOTELProject.a"
-
+  # spec.vendored_libraries       = "libBaseMedia_iOS.a", "libOTELProject.a"
+  # spec.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
   # spec.public_header_files      = 'Framework/WPlayerKit.framework/Headers/*.{h,m}'
-
+  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'armv7 arm64' }
   # spec.subspec 'Headers' do |spec|
   #   spec.source_files           = public_header_files
   #   spec.public_header_files    = public_header_files
@@ -30,6 +30,8 @@ Pod::Spec.new do |spec|
   #   rtkota.vendored_frameworks  = 'Framework/WPlayerKit.framework'
   # end
   
+  spec.frameworks   = "Accelerate", "AudioToolbox", "AVFoundation", "CoreData", "CoreMedia", "CoreTelephony", "MetalKit", "MobileCoreServices", "OpenAL", "SystemConfiguration", "VideoToolbox"
+
   spec.pod_target_xcconfig      = { 
                                   'OTHER_LDFLAGS' => '-lObjC',
                                   }
