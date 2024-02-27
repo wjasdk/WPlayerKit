@@ -113,6 +113,19 @@ typedef void(^WMediaResultBlock)(BOOL isSuc,NSString *_Nullable deviceId,NSStrin
 /// 取消TS文件下载
 - (void)cancelTsToMp4File;
 
+/// RTMP静音，主要云回放
+/// @param enable 是否静音
+- (void)rtmpMuteControlEnable:(BOOL)enable;
+
+
+/// rtmp倍数播放
+/// @param speed 0.5、1、2、4、8
+- (void)rtmpMultipleSpeed:(float)speed;
+
+
+/// 设置渲染按16:9适配或铺满，不设置默认是16:9
+/// @param adaptiveType 1: 16:9 , 0：铺满
+-(void)rtmpSetSurfaceAdaptiveType:(BOOL)adaptiveType;
  
 /// 添加播放过程中流的数据监听，播放过程中任何流的状态变化都会触发
 /// 一般情况下，关注 WCommonLinkiInterruptEvent 就能满足绝大部分需求，ZDKCallBackEvent 是具体的原因
@@ -143,9 +156,7 @@ typedef void(^WMediaResultBlock)(BOOL isSuc,NSString *_Nullable deviceId,NSStrin
 /// @param enable 是否静音
 - (void)p2pMuteControlEnable:(BOOL)enable;
  
-/// RTMP静音，主要云回放
-/// @param enable 是否静音
-- (void)rtmpMuteControlEnable:(BOOL)enable;
+
  
 /// 对讲初始化
 /// @param deviceId 设备ID
@@ -160,7 +171,9 @@ typedef void(^WMediaResultBlock)(BOOL isSuc,NSString *_Nullable deviceId,NSStrin
 /// 开启对讲
 /// @param sampleRate  音频采样率
 /// @param fullDuplex  是否进行全双工呼叫，默认是
-- (void)startSpeakerWithSampleRate:(NSInteger)sampleRate fullDuplex:(BOOL)fullDuplex;
+/// @param channel 通道号
+/// @param complete 对讲启动完成
+- (void)startSpeakerWithSampleRate:(NSInteger)sampleRate fullDuplex:(BOOL)fullDuplex channel:(NSInteger)channel complete:(void (^)(void))complete;
  
 /// 关闭对讲
 - (void)endSpeaker;
@@ -186,7 +199,7 @@ typedef void(^WMediaResultBlock)(BOOL isSuc,NSString *_Nullable deviceId,NSStrin
 /// @param channel 通道号
 /// @param screenShotPathType 操作类型 P2P或者RTMP
 /// @param completion   操作成功并保存后回调  path完成录制视频的保存路径
-- (void)screenShotWithDeviceId:(NSString *_Nullable)deviceId screenShotPathType:(WOperationType)screenShotPathType channel:(NSInteger)channel completion:(void(^_Nullable)(BOOL isSuc,NSString *_Nullable path))completion;
+- (void)screenShotWithDeviceId:(NSString *_Nullable)deviceId screenShotPathType:(WOperationType)screenShotPathType channel:(NSInteger)channel isLive:(BOOL)isLive completion:(void(^_Nullable)(BOOL isSuc,NSString *_Nullable path))completion;
  
 /// 获取TF卡信息
 /// @param deviceId 设备id
@@ -244,12 +257,6 @@ typedef void(^WMediaResultBlock)(BOOL isSuc,NSString *_Nullable deviceId,NSStrin
  @param speed 快放倍数 1、4、8、16; 1倍 4倍 8倍 16倍
  */
 -(void)tfMultiplesWithDeviceId:(NSString*)deviceId speed:(int)speed playView:(ZDKPlayVideoView*)playView chnannel:(NSInteger)chnannel;
-
-
-
-/// rtmp倍数播放
-/// @param speed 0.5、1、2、4、8
-- (void)rtmpMultipleSpeed:(float)speed;
 
  
 /// 搜索SD卡视频文件列表
@@ -310,6 +317,13 @@ typedef void(^WMediaResultBlock)(BOOL isSuc,NSString *_Nullable deviceId,NSStrin
 /// 挂断/拒绝接听
 /// - Parameter device: 设备id
 - (void)rejectCallDeviceId:(NSString *)deviceId;
+
+
+/// 设置渲染按16:9适配或铺满，不设置默认是16:9
+/// @param adaptiveType 1: 16:9 , 0：fill
+/// @param deviceId deviceId
+/// @param channel Video channel value
+-(void)p2pSetSurfaceAdaptiveType:(BOOL)adaptiveType deviceId:(NSString*)deviceId channel:(NSInteger)channel;
 
 
 /// 关闭SDK日志打印，调用后，SDK内部大部分日志将不会打印

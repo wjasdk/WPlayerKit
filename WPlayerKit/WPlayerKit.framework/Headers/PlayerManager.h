@@ -114,6 +114,12 @@
  */
 - (void)playMultipleSpeed:(float)speed;
 
+
+/// Set the rendering mode, defalut 16:9
+/// @param adaptiveType 1: 16:9 , 0：fill
+-(void)setSurfaceAdaptiveType:(BOOL)adaptiveType;
+
+
 @end
 
 

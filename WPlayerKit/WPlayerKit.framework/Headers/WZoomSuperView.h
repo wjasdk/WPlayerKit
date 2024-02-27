@@ -48,6 +48,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// 用于真实让设备放大缩小的方法, 跟tureSetCameraZoomBlock 配套使用的，一般是用于真实控制设备摄像头变焦，而不是view的缩放，目前设备不支持，该接口为以后预留
 - (void)tureSetCameraZoom;
 
+/// 是否支持滑动回调startRollAction，一般用于云台控制
+/// - Parameter support: 初始化类时默认支持，不支持可传NO
+- (void)supportStartRollAction:(BOOL)support;
+
 @end
 
 NS_ASSUME_NONNULL_END

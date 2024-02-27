@@ -14,6 +14,13 @@
 typedef void(^DpsSuccess)(id data);
 typedef void(^DpsFailure)(id data);
 
+/// Notification of changes in MQTT connection state implementation（MQTT连接状态实现变化的通知）
+/// {name = WPlayerKitMQTTSessionManagerStateChangeState; object = MQTTSessionManagerStateConnecting}
+#define WPlayerKitMQTTSessionManagerStateChangeState    @"WPlayerKitMQTTSessionManagerStateChangeState"
+#define WPlayerKitMQTTSessionManagerStateConnecting     @"MQTTSessionManagerStateConnecting"
+#define WPlayerKitMQTTSessionManagerStateConnected      @"MQTTSessionManagerStateConnected"
+#define WPlayerKitMQTTSessionManagerStateError          @"MQTTSessionManagerStateError"
+
 @protocol NetApiManager <NSObject>
 
 /// Initialize Token and Topic（初始化token和topic）
@@ -50,6 +57,10 @@ typedef void(^DpsFailure)(id data);
 - (void)wakeUpDeviceWithDeviceId:(NSString *)deviceId success:(DpsSuccess)success failure:(DpsFailure)failure;
 
 
+/// The end of the keep wake（销毁唤醒的轮询）
+- (void)closeWakeUpDeviceFind;
+
+
 /// keep wake the device（维活设备）
 /// @param deviceId required
 - (void)keepWakeWithDeviceId:(NSString *)deviceId;
@@ -61,8 +72,9 @@ typedef void(^DpsFailure)(id data);
 
 ///Check whether the firmware of the device can be upgraded （检查设备固件是否可以升级）
 /// @param deviceId required
-/// @param language optionals （cn、en）The default en
+/// @param language optionals （zh:中文,en:英语:de:德语:fr:法语:ja:日语:ko:韩语:gu:印度语）The default zh
 - (void)checkUpgradeWithDevice:(NSString *)deviceId language:(NSString *)language success:(DpsSuccess)success failure:(DpsFailure)failure;
+
 
 /// Device firmware upgrade （设备固件升级）
 /// @param deviceId required
@@ -110,6 +122,15 @@ typedef void(^DpsFailure)(id data);
      "message": "ok"
  } */
 - (void)getDeviceInfoWithDevice:(NSString *)deviceId success:(DpsSuccess)success failure:(DpsFailure)failure;
+
+
+/// Get the Event list （获取事件列表）
+/// @param deviceId 设备id
+/// @param startTime 开始时间
+/// @param endTime 结束时间
+/// @param page 页码
+/// @param pageSize 一页数量
+- (void)getEventListWithDevice:(NSString *)deviceId startTime:(NSString *)startTime endTime:(NSString *)endTime page:(NSInteger)page pageSize:(NSInteger)pageSize success:(DpsSuccess)success failure:(DpsFailure)failure;
 
 
 /// Sends a message to the specified topic（往指定主题发送消息）

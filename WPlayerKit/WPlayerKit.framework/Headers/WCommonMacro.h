@@ -49,12 +49,12 @@ typedef NS_ENUM(NSUInteger, WCommonLinkiInterruptEvent) {
 
 typedef NS_ENUM(NSUInteger, WCommonStreamStates) {
     WCommonStreamStatesUnkown,
-    WCommonStreamStatesConnecting,
-    WCommonStreamStatesLinkSuccess,
-    WCommonStreamStatesLinkFalse,
-    WCommonStreamStatesResolutionTooHight,
-    WCommonStreamStatesResolutionFit,
-    WCommonStreamStatesCameraPWD_Check_Failed
+    WCommonStreamStatesConnecting,              //加流中
+    WCommonStreamStatesLinkSuccess,             //加流成功
+    WCommonStreamStatesLinkFalse,               //加流失败
+    WCommonStreamStatesWakeUpSuccess,           //低功耗设备唤醒成功
+    WCommonStreamStatesWakeUpFailure,           //低功耗设备唤醒失败
+    WCommonStreamStatesPWDCheckFailed           //设备密码错误
 };
 
 /// 0:主码流 1:次码流  2: 音频流  3:录播视频  4:录播音频
@@ -64,7 +64,8 @@ typedef NS_ENUM(NSUInteger, WStreamType) {
     WStreamTypeAttachVideo  =  1,
     WStreamTypeAudio        =  2,
     WStreamTypeRecordVideo  =  3,
-    WStreamTypeRecordAudio  =  4
+    WStreamTypeRecordAudio  =  4,
+    WStreamTypeVideoStop    =  100
 };
 
 
@@ -86,6 +87,15 @@ typedef NS_ENUM(NSUInteger, WVideoQuality) {
     WVideoQualitySD =  0,    /* 流畅 */
     WVideoQualityHD,         /* 高清 */
     WVideoQualitySHD,        /* 超清 */
+};
+
+/// 视频呼叫模式
+/// 0:实时预览 1:语音对讲 2 视频对讲 3卡回放
+typedef NS_ENUM(NSUInteger, WTalkMode) {
+    WTalkModeLive =  0,            /* 实时直播预览 */
+    WTalkModeVoiceCall = 1,        /* 语音对讲通话 */
+    WTalkModeVideoCall = 2,        /* 视频双向通话 */
+    WTalkModeTFBackVideo = 3,      /* TF卡视频回放 */
 };
 
 #endif /* WCommonMacro_h */

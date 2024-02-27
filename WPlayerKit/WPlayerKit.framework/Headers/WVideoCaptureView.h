@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WCommonMacro.h"
+#import <WPlayerKit/WCommonMacro.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WVideoCaptureView : UIView
+
+@property (nonatomic, assign) BOOL cropyuv;         /// 是否自定义宽高裁剪视频，默认为YES
+@property (nonatomic, assign) NSInteger cropWidth;  /// 自定义裁剪视频的宽度
+@property (nonatomic, assign) NSInteger cropHeight; /// 自定义裁剪视频的高度
+@property (nonatomic, assign) NSInteger realFramerate; /// 实际帧率，SDK内部默认15帧
 
 /// 判断是否有相机采集权限
 + (BOOL)isAVCaptureAuthorization;
@@ -19,6 +24,13 @@ NS_ASSUME_NONNULL_BEGIN
 /// 挂断/拒绝接听
 /// - Parameter device: 设备id
 + (void)rejectCallDeviceId:(NSString *)deviceId;
+
+/// 主动向设备发起呼叫
+/// - Parameter deviceId: 设备id
+/// - Parameter state: 0拒接，1接听，2通话中
+/// - Parameter timeout: 超时时间，默认可传60s
+/// - Parameter failure: 失败、超时等（不能为空）
++ (void)initiateCallDeviceId:(NSString *)deviceId timeout:(NSInteger)timeout complete:(void(^)(NSInteger state))complete failure:(void(^)(void))failure;
 
 /// 初始化视频采集引擎
 /// - Parameter frame:CGRect
@@ -37,6 +49,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 结束推流
 - (void)stopPushStream;
 
+/// 开始采集，默认初始化采集器时无手机端预览，需要推流才有预览，如想一开始有预览，可以调用该方法
+- (void)startCapture;
+
+/// 停止采集
+- (void)stopCapture;
 
 @end
 

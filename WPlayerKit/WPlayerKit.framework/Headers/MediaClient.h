@@ -39,6 +39,11 @@
 @property (nonatomic, strong, readonly) NSString *paasIoTDomainUrl;
 
 /*
+ *  mq server
+ */
+@property (nonatomic, strong) NSString *mqServerPrefix;
+
+/*
  *  SDK internal use
  */
 @property (nonatomic, assign) BOOL isJclink_mobile_Init;

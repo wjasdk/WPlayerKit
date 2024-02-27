@@ -29,4 +29,5 @@ FOUNDATION_EXPORT const unsigned char WPlayerKitVersionString[];
 #import <WPlayerKit/WMediaControl.h>
 #import <WPlayerKit/WZoomSuperView.h>
 #import <WPlayerKit/WVideoCaptureView.h>
+#import <WPlayerKit/WVideoRecorderView.h>
 

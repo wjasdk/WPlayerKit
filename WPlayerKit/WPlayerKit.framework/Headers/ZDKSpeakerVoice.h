@@ -43,6 +43,19 @@
 /// @param fullDuplex  Whether to make a full-duplex call，The default yes
 - (void)startWithSampleRate:(NSInteger)sampleRate fullDuplex:(BOOL)fullDuplex;
 
+/// Open to talk
+/// @param sampleRate  sampleRate
+/// @param fullDuplex  Whether to make a full-duplex call，The default yes
+/// @param channel  channel, The default 0
+- (void)startWithSampleRate:(NSInteger)sampleRate fullDuplex:(BOOL)fullDuplex channel:(NSInteger)channel;
+
+/// Open to talk
+/// @param sampleRate  sampleRate
+/// @param fullDuplex  Whether to make a full-duplex call，The default yes
+/// @param channel  channel, The default 0
+/// @param complete Initialization complete
+- (void)startWithSampleRate:(NSInteger)sampleRate fullDuplex:(BOOL)fullDuplex channel:(NSInteger)channel complete:(void (^)(void))complete;
+
 /// Close to talk
 - (void)stop;
 

@@ -23,12 +23,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark ------------------------ P2P直播、卡回放相关操作方法 ----------------------------------
 
-/// 播放直播视频采用p2p，打开音频流、视频流均调用此方法
+/// 播放直播视频采用p2p，打开视频流调用此方法
 /// @param devicePwd 设备密码(默认是123456)
 /// @param channel 通道(默认为0)
 /// @param streamType 需要打开的音视频流
 /// @param isWakeUp 是否需要唤醒，用于门锁、猫眼、可视门铃等，一般摄像机传NO
-- (void)playVideoByP2PDevicePwd:(NSString *)devicePwd channel:(int)channel streamType:(WStreamType)streamType isWakeUp:(BOOL)isWakeUp completion:(void(^)(BOOL isSuc,NSString *deviceId,long playId,WCommonStreamStates state))compltion;
+- (void)playVideoByP2PDevicePwd:(NSString *)devicePwd channel:(int)channel streamType:(WStreamType)streamType isWakeUp:(BOOL)isWakeUp completion:(void(^)(WCommonStreamStates state, NSString *deviceId, long playId))compltion;
 
 
 /// 播放TF卡回放视频
@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param channel 通道(默认为0)
 /// @param fileName 文件名称
 /// @param version tf版本 0：旧   1：新,  tfInfo中的tf_version
-/// @param time time
+/// @param time time ((timeStamp - model.file_start_time) * 1000)
 /// @param completion 回调
 /// @param totoalTimeHandel 回调
 /// @param timeHandle 回调 int currentTime  = [weakSelf.current_fileModel.file_start_time intValue] + current/1000; NSString *rulerValue = [Util stGetTimeFromTimesTamp:currentTime model:@"HH:mm:ss"];
@@ -46,8 +46,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 播放TF卡回放视频(优化版本，推荐)
 /// @param devicePwd 设备密码 (默认是123456)
 /// @param channel 通道(默认为0)
-/// @param startTime 开始时间
-/// @param endTime 结束时间
+/// @param startTime 开始时间timeStamp
+/// @param endTime 结束时间，预留字段，目前传0即可
 /// @param completion 回调
 /// @param timeHandle 回调
 - (void)playVideoByP2PDevicePwd:(NSString *)devicePwd startTime:(NSInteger)startTime endTime:(NSInteger)endTime channel:(int)channel completion:(void(^)(BOOL isSuc))completion timeHandle:(void(^)(NSInteger current))timeHandle;
@@ -75,7 +75,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 播放时进行视频录制
 /// @param recordSwitch YES:开始录制 NO:结束录制
-/// @param duration 时长(max:300s  min:5s)
+/// @param duration 时长(max:300s  min:1s)
 /// @param channel 通道(默认为0)
 /// @param operationType 操作类型，直播/TF卡回放时：WOperationP2P；云回放/告警时：WOperationRTMP
 /// @param progress 进度
@@ -83,27 +83,27 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)playRecordVideoOnOff:(BOOL)recordSwitch duration:(NSInteger)duration channel:(NSInteger)channel operationType:(WOperationType)operationType progress:(void(^_Nonnull)(NSString *_Nonnull timeStr,int timeCount))progress completion:(void(^_Nullable)(BOOL isSuc,NSString *_Nullable errInfo,NSString *_Nullable path))completion;
 
 
-/// 销毁直播、卡回放视频，关闭播放器
-- (void)stopVideoP2P;
+/// 销毁播放器，P2P/RTMP
+- (void)playVideoStop;
 
 
-/// 播放暂停(仅限于卡回放)
-- (void)playVideoPauseP2P;
+/// 播放暂停，P2P/RTMP
+- (void)playVideoPause;
 
 
-/// 暂停后恢复播放(仅限于卡回放)
-- (void)playVideoResumeP2P;
+/// 暂停后恢复播放，P2P/RTMP
+- (void)playVideoResume;
 
 
-/// 是否打开声音（加音频流）
+/// 是否打开声音（加音频流）, P2P专用
 /// @param isOpen  是否打开
 /// @param completion 回调
 - (void)setIsOpenAudio:(BOOL)isOpen completion:(void(^_Nullable)(BOOL isSuc))completion;
 
 
-/// P2P播放器是否静音
+/// 播放器是否静音，P2P/RTMP
 /// @param mute  是否静音
-- (void)setP2PVideoMute:(BOOL)mute;
+- (void)setVideoMute:(BOOL)mute;
 
 
 /// 播放截图(适用于P2P,RTMP)
@@ -145,10 +145,29 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param fullDuplex  是否进行全双工呼叫，默认传是
 - (void)startSpeakerWithSampleRate:(NSInteger)sampleRate fullDuplex:(BOOL)fullDuplex;
  
+/// 开启对讲
+/// @param sampleRate  音频采样率
+/// @param fullDuplex  是否进行全双工呼叫，默认传是
+/// @param complete 启动完成
+- (void)startSpeakerWithSampleRate:(NSInteger)sampleRate fullDuplex:(BOOL)fullDuplex complete:(void(^)(void))complete;
 
 /// 关闭对讲
 - (void)endSpeaker;
 
+
+/// 设置渲染按16:9适配或铺满，不设置默认是16:9
+/// @param adaptiveType 1: 16:9 , 0：fill
+-(void)setSurfaceAdaptiveType:(BOOL)adaptiveType;
+
+
+/// p2p 音频播放模式，默认为扬声器播放，设置no切换成听筒
+/// - Parameter loudspeaker: yes 扬声器，no 听筒
+- (void)setAudioCategoryLoudspeaker:(BOOL)loudspeaker;
+
+
+/// 设置当前视频模式 ，用于数据上报到监控系统，具体看枚举值WTalkMode
+/// - Parameter talkMode
+- (void)setTalkMode:(WTalkMode)talkMode;
 
 #pragma mark ----------------------------- RTMP云回放、告警播放相关操作方法 -------------------------------
 
@@ -167,23 +186,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)playVideoByRTMP:(NSString *)url completionZDKCallBackEvent:(void(^_Nonnull)(ZDKCallBackEvent callBack))completionZDKCallBackEvent;
  
 
-/// RTMP播放器是否静音（声音开启跟关闭）
-/// @param mute  是否静音
-- (void)setRTMPVideoMute:(BOOL)mute;
- 
-
-/// RTMP-停止播放，并销毁
-- (void)playVideoStopRTMP;
-
-/// 播放暂停(适用于RTMP)
-- (void)playVideoPauseRTMP;
-
-/// 暂停后恢复播放(适用于RTMP)
-- (void)playVideoResumeRTMP;
-
 /// 更改播放进度(适用于RTMP)
 /// @param position 播放进度,第几秒，比如第10秒就传10
 - (void)changePlayPositionRTMP:(int)position completion:(void(^)(BOOL isSuc))completion;
+ 
 
 @end
 

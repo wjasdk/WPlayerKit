@@ -35,6 +35,9 @@
 /// @param message 消息体
 - (void)sendMessageToTopic:(NSString *)topic message:(NSString *)message;
 
+/// connect mqtt
+- (void)connectMqtt;
+
 /// Destroy mqtt（销毁mqtt）
 - (void)disconnectWithDisconnect;
 

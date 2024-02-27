@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <WPlayerKit/WCommonMacro.h>
 
 @protocol P2PPlayManager <NSObject>
 
+@property (nonatomic, assign, readonly) BOOL privateAudioCategoryLoudspeaker;
 
 /**
  P2P Token Create a video connection
@@ -81,6 +83,13 @@
  @param channel  channel
  */
 - (void)setP2PSurfaceWithPlayView:(ZDKPlayVideoView*)playView andWithCameraID:(NSString*)cameraID channel:(NSInteger)channel;
+
+/// Set the rendering mode, defalut 16:9
+/// @param adaptiveType 1: 16:9 , 0：fill
+/// @param cameraID cameraID
+/// @param channel Video channel value
+-(void)setSurfaceAdaptiveType:(BOOL)adaptiveType cameraID:(NSString*)cameraID channel:(NSInteger)channel;
+
 /**
  
  Close Audio
@@ -115,7 +124,7 @@
  @param cameraID cameraID
  @param chnannel chnannel
  */
--(void)p2pShootScreenWithFilePath:(NSString*)filePath cameraID:(NSString*)cameraID chnannel:(NSInteger)chnannel;
+-(void)p2pShootScreenWithFilePath:(NSString*)filePath cameraID:(NSString*)cameraID andWithisPlay:(BOOL)isPlay chnannel:(NSInteger)chnannel;
 
 /**
  p2p Record
@@ -203,5 +212,13 @@
 /// 双链路开关
 /// - Parameter isOpen: 开关
 -(void)p2pMultilinkEnableIsOpen:(BOOL)isOpen;
+
+/// p2p 音频播放模式，默认为扬声器播放，设置为NO可切换成听筒
+/// - Parameter loudspeaker: YES 扬声器，NO 听筒
+- (void)setAudioCategoryLoudspeaker:(BOOL)loudspeaker;
+
+/// 设置当前视频模式 ，用于数据上报到监控系统，具体看枚举值WTalkMode
+/// - Parameter talkMode
+- (void)setTalkMode:(WTalkMode)talkMode deviceId:(NSString *)deviceId;
 
 @end

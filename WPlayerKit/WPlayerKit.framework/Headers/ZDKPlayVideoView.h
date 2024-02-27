@@ -17,4 +17,7 @@
 /// 设备ID
 @property (nonatomic, copy) NSString *deviceId;
 
+/// 设置渲染按16:9适配或铺满，默认YES=16:9, NO=铺满
+@property (nonatomic, assign) BOOL surfaceAdaptive;
+
 @end
