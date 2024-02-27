@@ -1,22 +1,35 @@
 {
   "name": "WPlayerKit",
-  "version": "0.1.0",
-  "summary": "A short description of WPlayerKit.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/lishutian@wjacloud.com/WPlayerKit",
+  "version": "0.1.2",
+  "summary": "P2P音视频播放器SDK库",
+  "description": "P2P音视频播放器SDK，轻松实现手机与设备画面实时预览SDK",
+  "homepage": "https://github.com/wjasdk/WPlayerKit.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "lishutian@wjacloud.com": "lishutian@wjacloud.com"
+    "wjasdk": "lishutian@wjacloud.com"
   },
   "source": {
-    "git": "https://github.com/lishutian@wjacloud.com/WPlayerKit.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/wjasdk/WPlayerKit.git",
+    "tag": "0.1.2"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "11.0"
   },
-  "source_files": "WPlayerKit/Classes/**/*"
+  "vendored_frameworks": "WPlayerKit/*.{framework}",
+  "frameworks": [
+    "Accelerate",
+    "AudioToolbox",
+    "AVFoundation",
+    "CoreData",
+    "CoreMedia",
+    "CoreTelephony",
+    "MetalKit",
+    "MobileCoreServices",
+    "OpenAL",
+    "SystemConfiguration",
+    "VideoToolbox"
+  ]
 }
