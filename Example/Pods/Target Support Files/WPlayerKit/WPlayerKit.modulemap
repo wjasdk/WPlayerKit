@@ -1,0 +1,6 @@
+framework module WPlayerKit {
+  umbrella header "WPlayerKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
