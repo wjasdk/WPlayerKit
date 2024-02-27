@@ -38,11 +38,11 @@
 
 /* Begin PBXFileReference section */
 		0BCFAA81475A65A2A31791F8 /* Pods-WPlayerKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPlayerKit_Example.release.xcconfig"; path = "Target Support Files/Pods-WPlayerKit_Example/Pods-WPlayerKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		13F56683BDFB0EE0C5EECC1B /* WPlayerKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WPlayerKit.podspec; path = ../WPlayerKit.podspec; sourceTree = "<group>"; };
-		15D6AD8563E4FDB380A2BFB2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		13F56683BDFB0EE0C5EECC1B /* WPlayerKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WPlayerKit.podspec; path = ../WPlayerKit.podspec; sourceTree = "<group>"; };
+		15D6AD8563E4FDB380A2BFB2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		17545778F4664CE2E86E75C1 /* Pods-WPlayerKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPlayerKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-WPlayerKit_Tests/Pods-WPlayerKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		409055E5A223CD0444FD4F11 /* Pods-WPlayerKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPlayerKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-WPlayerKit_Example/Pods-WPlayerKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5BE074DF43BC8E3D82C73FD0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5BE074DF43BC8E3D82C73FD0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* WPlayerKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPlayerKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -193,7 +193,6 @@
 				F6E5248C7DC9AA4755D84113 /* Pods-WPlayerKit_Tests.debug.xcconfig */,
 				17545778F4664CE2E86E75C1 /* Pods-WPlayerKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "lishutian@wjacloud.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = S88GPWVA95;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -494,6 +497,7 @@
 			baseConfigurationReference = 409055E5A223CD0444FD4F11 /* Pods-WPlayerKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S88GPWVA95;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WPlayerKit/WPlayerKit-Prefix.pch";
 				INFOPLIST_FILE = "WPlayerKit/WPlayerKit-Info.plist";
@@ -510,6 +514,7 @@
 			baseConfigurationReference = 0BCFAA81475A65A2A31791F8 /* Pods-WPlayerKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S88GPWVA95;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WPlayerKit/WPlayerKit-Prefix.pch";
 				INFOPLIST_FILE = "WPlayerKit/WPlayerKit-Info.plist";
