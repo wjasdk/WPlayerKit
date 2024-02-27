@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WPlayerKit'
-  s.version          = '0.1.3'
+  s.version          = '2.6.9_2401161730'
   s.summary          = 'P2P音视频播放器SDK'
 
 # This description is used to generate tags and improve search results.
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'WPlayerKit/Classes/**/*'
   s.vendored_frameworks = 'WPlayerKit/*.{framework}'
-  s.frameworks   = "Accelerate", "AudioToolbox", "AVFoundation", "CoreData", "CoreMedia", "CoreTelephony", "MetalKit", "MobileCoreServices", "OpenAL", "SystemConfiguration", "VideoToolbox"
+  s.frameworks   = 'Accelerate', 'AudioToolbox', 'AVFoundation', 'CoreData', 'CoreMedia', 'CoreTelephony', 'MetalKit', 'MobileCoreServices', 'OpenAL', 'SystemConfiguration', 'VideoToolbox'
 
   # s.resource_bundles = {
   #   'WPlayerKit' => ['WPlayerKit/Assets/*.png']
