@@ -15,6 +15,7 @@
 			dependencies = (
 			);
 			name = WPlayerKit;
+			productName = WPlayerKit;
 		};
 /* End PBXAggregateTarget section */
 
@@ -48,7 +49,7 @@
 		06AE747F738C9F52E919738F2C46A0A2 /* WPlayerKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPlayerKit.debug.xcconfig; sourceTree = "<group>"; };
 		130FAB2024E798D19658137AB6492EC6 /* Pods-WPlayerKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WPlayerKit_Example-dummy.m"; sourceTree = "<group>"; };
 		173751E6EE54B1CB51565AF244B89ED2 /* Pods-WPlayerKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPlayerKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		1745AF491B344113E3EACC85359EBF4B /* WPlayerKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WPlayerKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1745AF491B344113E3EACC85359EBF4B /* WPlayerKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WPlayerKit.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		43F5A3ADFBB395345EEAF46854B8AB6D /* Pods-WPlayerKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WPlayerKit_Tests.modulemap"; sourceTree = "<group>"; };
 		449A5D9C88734BFCA90510C79B86C19F /* Pods-WPlayerKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPlayerKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		45D25F9130CD127610F5AEC76CB7844B /* Pods-WPlayerKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPlayerKit_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -59,18 +60,18 @@
 		90379B6829EBACED6EEC94425DAE43F5 /* WPlayerKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPlayerKit.release.xcconfig; sourceTree = "<group>"; };
 		975B532457E71C2009F0424D3186717F /* Pods-WPlayerKit_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WPlayerKit_Example"; path = Pods_WPlayerKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9767C724DF6B000B7C62A7D7DD75D86D /* Pods-WPlayerKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPlayerKit_Tests-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AC0B4FB9CB6F35BDE94F5325B10E65A5 /* Pods-WPlayerKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WPlayerKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AD9B939473CBF543D201EC04CB5580FC /* Pods-WPlayerKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPlayerKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BFAD13E723E8CAA357EF48A202DE1634 /* Pods-WPlayerKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WPlayerKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		CC1AB9DF9AAEF7295D51AD1770BE5113 /* Pods-WPlayerKit_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WPlayerKit_Tests"; path = Pods_WPlayerKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE557DFCF0EA7F03E80D3FAB3A2396FB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		CE557DFCF0EA7F03E80D3FAB3A2396FB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D1935A205F06C2B7963D8A7B27864B00 /* Pods-WPlayerKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WPlayerKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D54F38AC02E2D060BE4669E353FF3417 /* Pods-WPlayerKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPlayerKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		D809A568A98E46924FF1BAAE323D4244 /* Pods-WPlayerKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WPlayerKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		DB0DA9A10DD7DA26EAC6B5CA08E149D9 /* Pods-WPlayerKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WPlayerKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		F37588DD82CBEA7FE8CC987093CAC1B1 /* Pods-WPlayerKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPlayerKit_Example-Info.plist"; sourceTree = "<group>"; };
-		F6A7F8F79B469FD1ED7111FBF1DC0F2E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F6A7F8F79B469FD1ED7111FBF1DC0F2E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F8E1B434075048AD62B5108F18B86DD4 /* Pods-WPlayerKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WPlayerKit_Example.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -481,8 +482,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

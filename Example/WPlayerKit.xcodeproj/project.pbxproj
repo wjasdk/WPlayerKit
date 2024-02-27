@@ -58,15 +58,15 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		68DE2E233F573CD1875F645C /* Pods-WPlayerKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPlayerKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-WPlayerKit_Example/Pods-WPlayerKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		69DAD4367E230D950AA4C582 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		69DAD4367E230D950AA4C582 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7712B51FF7D46E4B2E054EC7 /* Pods-WPlayerKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPlayerKit_Example.release.xcconfig"; path = "Target Support Files/Pods-WPlayerKit_Example/Pods-WPlayerKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89B0B6035D06FB2EEEB80527 /* Pods-WPlayerKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPlayerKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-WPlayerKit_Tests/Pods-WPlayerKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B3801794273759D93C7DC304 /* Pods-WPlayerKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPlayerKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WPlayerKit_Tests/Pods-WPlayerKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B549B1CB97A2A749562D27B4 /* Pods_WPlayerKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WPlayerKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDB5FC099FA3A465FCAC9C2C /* WPlayerKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WPlayerKit.podspec; path = ../WPlayerKit.podspec; sourceTree = "<group>"; };
-		E71A7AC50557738CAB48FB2A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DDB5FC099FA3A465FCAC9C2C /* WPlayerKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WPlayerKit.podspec; path = ../WPlayerKit.podspec; sourceTree = "<group>"; };
+		E71A7AC50557738CAB48FB2A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				B3801794273759D93C7DC304 /* Pods-WPlayerKit_Tests.debug.xcconfig */,
 				89B0B6035D06FB2EEEB80527 /* Pods-WPlayerKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "lishutian@wjacloud.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = S88GPWVA95;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -494,6 +497,7 @@
 			baseConfigurationReference = 68DE2E233F573CD1875F645C /* Pods-WPlayerKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S88GPWVA95;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WPlayerKit/WPlayerKit-Prefix.pch";
 				INFOPLIST_FILE = "WPlayerKit/WPlayerKit-Info.plist";
@@ -510,6 +514,7 @@
 			baseConfigurationReference = 7712B51FF7D46E4B2E054EC7 /* Pods-WPlayerKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S88GPWVA95;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WPlayerKit/WPlayerKit-Prefix.pch";
 				INFOPLIST_FILE = "WPlayerKit/WPlayerKit-Info.plist";
