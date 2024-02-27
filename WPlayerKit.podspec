@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WPlayerKit'
-  s.version          = '2.6.9_2401161730'
+  s.version          = '2.6.9.2401161730'
   s.summary          = 'P2P音视频播放器SDK'
 
 # This description is used to generate tags and improve search results.
