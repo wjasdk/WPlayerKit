@@ -30,7 +30,7 @@ P2P音视频播放器SDK，轻松实现手机与设备画面实时预览
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'WPlayerKit/Classes/**/*'
+  # s.source_files = 'WPlayerKit/Classes/**/*'
   s.vendored_frameworks = 'WPlayerKit/*.{framework}'
   s.frameworks   = 'Accelerate', 'AudioToolbox', 'AVFoundation', 'CoreData', 'CoreMedia', 'CoreTelephony', 'MetalKit', 'MobileCoreServices', 'OpenAL', 'SystemConfiguration', 'VideoToolbox'
 
