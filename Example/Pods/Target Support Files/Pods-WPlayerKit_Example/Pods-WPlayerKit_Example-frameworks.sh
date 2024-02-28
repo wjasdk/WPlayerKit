@@ -176,9 +176,11 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${PODS_ROOT}/../../WPlayerKit/WPlayerKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WPlayerKit/WPlayerKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${PODS_ROOT}/../../WPlayerKit/WPlayerKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WPlayerKit/WPlayerKit.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
