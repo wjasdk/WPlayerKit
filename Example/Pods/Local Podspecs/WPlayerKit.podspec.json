@@ -18,5 +18,6 @@
   "platforms": {
     "ios": "11.0"
   },
+  "source_files": "WPlayerKit/Classes/**/*",
   "vendored_frameworks": "WPlayerKit/*.{framework}"
 }

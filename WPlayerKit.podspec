@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
 
-  # s.source_files = 'WPlayerKit/Classes/**/*'
+  s.source_files = 'WPlayerKit/Classes/**/*'
   s.vendored_frameworks = 'WPlayerKit/*.{framework}'
 
   # s.resource_bundles = {
