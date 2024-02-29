@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		002D71F2DE3C287E128004311C14F22B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		12E25AC2B61CB16A062C353C4D329780 /* WKitVersionLog.md in Sources */ = {isa = PBXBuildFile; fileRef = DF57793F1EC75C52D5D9FE372B36E873 /* WKitVersionLog.md */; };
 		1732938F9EA8397933B4B88BA2F71F76 /* Pods-WPlayerKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 130FAB2024E798D19658137AB6492EC6 /* Pods-WPlayerKit_Example-dummy.m */; };
-		34927CA4FA728FF2BD2E680D3AA28BD2 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = C2692A2BC10DA393C64BB784C6E079C5 /* ReplaceMe.m */; };
-		35758B9D6CCB0E2F76EC06C01F823E76 /* WKitVersionLog.h in Headers */ = {isa = PBXBuildFile; fileRef = F8490E96EFF16083AAAFBFAADE465A25 /* WKitVersionLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D96B7A5C79A0ECB2AB37B4BCBF3A947 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BDC41923B9105E07C84923C7D858DC /* ReplaceMe.m */; };
 		733D7E2F3657333D9524155793456724 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		79E3D950EB0A4C26804CF12BE94526D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		A28DB4803C359020F881E3F70526FCC5 /* Pods-WPlayerKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1935A205F06C2B7963D8A7B27864B00 /* Pods-WPlayerKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A82BF55E98E96F34827591AE1DC56C80 /* Pods-WPlayerKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFAD13E723E8CAA357EF48A202DE1634 /* Pods-WPlayerKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA726BB3582AFB5CA51D500614601EBC /* Pods-WPlayerKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0DA9A10DD7DA26EAC6B5CA08E149D9 /* Pods-WPlayerKit_Tests-dummy.m */; };
-		C1259DC3095AE8FD1350E3F635E6715B /* WPlayerKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A154C116F5DEF8115D90A49D9A07A0C0 /* WPlayerKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7C5445C05FE96C07170EC7CF4A34A37 /* WPlayerKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9902EDFED712FA385C1172B6106EB3DE /* WPlayerKit-dummy.m */; };
+		BCBEF5BCC66C9DC5510210B9AA869013 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C0B2820E88F237BB393E352555227636 /* WPlayerKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE29B36D161D85562247971F5B817B98 /* WPlayerKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6F5908DC3EF6307E1EE9F24C1A40474 /* WPlayerKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE01F05F1BB8004D49B3DBC0C549BA0 /* WPlayerKit-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,41 +38,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		064F548EBD7FAD815CA33E6A2643E713 /* WPlayerKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WPlayerKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		0902873B8A2D0718E0E3655E54DEC2CD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		130FAB2024E798D19658137AB6492EC6 /* Pods-WPlayerKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WPlayerKit_Example-dummy.m"; sourceTree = "<group>"; };
 		173751E6EE54B1CB51565AF244B89ED2 /* Pods-WPlayerKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPlayerKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		22BBF8451349A13A8F441F1ADFA17743 /* WPlayerKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPlayerKit-prefix.pch"; sourceTree = "<group>"; };
-		2B8CEBC275863A468F341AE8AC197C37 /* WPlayerKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WPlayerKit-Info.plist"; sourceTree = "<group>"; };
+		28F2F8F21A8668F1A9274708C915CE34 /* WPlayerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WPlayerKit.framework; path = WPlayerKit/WPlayerKit.framework; sourceTree = "<group>"; };
+		30DC9F6833B94B6BC31AA708D3638F68 /* WPlayerKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPlayerKit.debug.xcconfig; sourceTree = "<group>"; };
 		43F5A3ADFBB395345EEAF46854B8AB6D /* Pods-WPlayerKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WPlayerKit_Tests.modulemap"; sourceTree = "<group>"; };
 		449A5D9C88734BFCA90510C79B86C19F /* Pods-WPlayerKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPlayerKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		45D25F9130CD127610F5AEC76CB7844B /* Pods-WPlayerKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPlayerKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4CB52BC88DF8DDB752B85D602E7CF21F /* Pods-WPlayerKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPlayerKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		6C977B24B81B72DE0C53240E5A3F3CCE /* WPlayerKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPlayerKit.debug.xcconfig; sourceTree = "<group>"; };
+		5A140F8025122C1C35DE518A960F686D /* WPlayerKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WPlayerKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6D5001668F20AB907B221E211D031133 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		784EFECEA5F838A9AF321692ED3A88A7 /* WPlayerKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WPlayerKit-Info.plist"; sourceTree = "<group>"; };
 		86556E54F8736FD7204503AA36E81605 /* Pods-WPlayerKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WPlayerKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		975B532457E71C2009F0424D3186717F /* Pods-WPlayerKit_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WPlayerKit_Example"; path = Pods_WPlayerKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9767C724DF6B000B7C62A7D7DD75D86D /* Pods-WPlayerKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPlayerKit_Tests-Info.plist"; sourceTree = "<group>"; };
-		9902EDFED712FA385C1172B6106EB3DE /* WPlayerKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WPlayerKit-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A154C116F5DEF8115D90A49D9A07A0C0 /* WPlayerKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPlayerKit-umbrella.h"; sourceTree = "<group>"; };
+		A574801740286EF36AB033209250C1CB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		AC0B4FB9CB6F35BDE94F5325B10E65A5 /* Pods-WPlayerKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WPlayerKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AD9B939473CBF543D201EC04CB5580FC /* Pods-WPlayerKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPlayerKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AE29B36D161D85562247971F5B817B98 /* WPlayerKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPlayerKit-umbrella.h"; sourceTree = "<group>"; };
 		BFAD13E723E8CAA357EF48A202DE1634 /* Pods-WPlayerKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WPlayerKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		C2692A2BC10DA393C64BB784C6E079C5 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = WPlayerKit/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		C68ACAFFD04B2DC09C1BC13BECB81D11 /* WPlayerKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPlayerKit-prefix.pch"; sourceTree = "<group>"; };
 		CC1AB9DF9AAEF7295D51AD1770BE5113 /* Pods-WPlayerKit_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WPlayerKit_Tests"; path = Pods_WPlayerKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1935A205F06C2B7963D8A7B27864B00 /* Pods-WPlayerKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WPlayerKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D54F38AC02E2D060BE4669E353FF3417 /* Pods-WPlayerKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPlayerKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		D809A568A98E46924FF1BAAE323D4244 /* Pods-WPlayerKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WPlayerKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		DB0DA9A10DD7DA26EAC6B5CA08E149D9 /* Pods-WPlayerKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WPlayerKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		DBE81033D90D68A7A74C8B3BF93F3649 /* WPlayerKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WPlayerKit; path = WPlayerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCEDF760F3D29B669F27BD15B10AAEA3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		ED1387C2AC27F80287806D85252C6F19 /* WPlayerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WPlayerKit.framework; path = WPlayerKit/WPlayerKit.framework; sourceTree = "<group>"; };
+		DF57793F1EC75C52D5D9FE372B36E873 /* WKitVersionLog.md */ = {isa = PBXFileReference; includeInIndex = 1; name = WKitVersionLog.md; path = WPlayerKit/Classes/WKitVersionLog.md; sourceTree = "<group>"; };
+		E07E3239B5FA4482BE90B50CE37E57A7 /* WPlayerKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPlayerKit.release.xcconfig; sourceTree = "<group>"; };
+		E7BDC41923B9105E07C84923C7D858DC /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = WPlayerKit/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		F37588DD82CBEA7FE8CC987093CAC1B1 /* Pods-WPlayerKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPlayerKit_Example-Info.plist"; sourceTree = "<group>"; };
-		F8490E96EFF16083AAAFBFAADE465A25 /* WKitVersionLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WKitVersionLog.h; path = WPlayerKit/Classes/WKitVersionLog.h; sourceTree = "<group>"; };
+		F5370F96E0D45ADD77E26638B7AA0229 /* WPlayerKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WPlayerKit.modulemap; sourceTree = "<group>"; };
 		F8E1B434075048AD62B5108F18B86DD4 /* Pods-WPlayerKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WPlayerKit_Example.modulemap"; sourceTree = "<group>"; };
-		FABF224CC025D92933F40E6357200D97 /* WPlayerKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPlayerKit.release.xcconfig; sourceTree = "<group>"; };
-		FCA195B18AD0E5BF1AE1830D71FB5E94 /* WPlayerKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WPlayerKit.modulemap; sourceTree = "<group>"; };
+		FDE01F05F1BB8004D49B3DBC0C549BA0 /* WPlayerKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WPlayerKit-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,19 +84,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		258BBAE6E302CE40F5E82562EA910624 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79E3D950EB0A4C26804CF12BE94526D2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3E656D5FE212DDC73FE6D04863832159 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				002D71F2DE3C287E128004311C14F22B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		514C7A48658E2F31D7F5B67D0CD5F667 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCBEF5BCC66C9DC5510210B9AA869013 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,10 +112,18 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		0E0C65123099D94CF9637D610FB9090A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28F2F8F21A8668F1A9274708C915CE34 /* WPlayerKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4E4756AB6B62C81ECBE9EFFEC7E4511F /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DE64D7978E95594582E429DEE0A760B2 /* WPlayerKit */,
+				EAAAD77B62BAD6670C430E05A3DD500A /* WPlayerKit */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -145,6 +153,16 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		89CEE1913E0531DA28F56641A49CC83D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6D5001668F20AB907B221E211D031133 /* LICENSE */,
+				A574801740286EF36AB033209250C1CB /* README.md */,
+				5A140F8025122C1C35DE518A960F686D /* WPlayerKit.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		8B44A4FEFAEA5BC73B04220929F2B369 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,39 +171,6 @@
 				DBE81033D90D68A7A74C8B3BF93F3649 /* WPlayerKit */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8E0ABC4F062408A0BF1FD97898645FDD /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				0902873B8A2D0718E0E3655E54DEC2CD /* LICENSE */,
-				DCEDF760F3D29B669F27BD15B10AAEA3 /* README.md */,
-				064F548EBD7FAD815CA33E6A2643E713 /* WPlayerKit.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		AB047C449D2E642DD9E624D2D81FAD7E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FCA195B18AD0E5BF1AE1830D71FB5E94 /* WPlayerKit.modulemap */,
-				9902EDFED712FA385C1172B6106EB3DE /* WPlayerKit-dummy.m */,
-				2B8CEBC275863A468F341AE8AC197C37 /* WPlayerKit-Info.plist */,
-				22BBF8451349A13A8F441F1ADFA17743 /* WPlayerKit-prefix.pch */,
-				A154C116F5DEF8115D90A49D9A07A0C0 /* WPlayerKit-umbrella.h */,
-				6C977B24B81B72DE0C53240E5A3F3CCE /* WPlayerKit.debug.xcconfig */,
-				FABF224CC025D92933F40E6357200D97 /* WPlayerKit.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/WPlayerKit";
-			sourceTree = "<group>";
-		};
-		B6BD7EA078151C6BE0CBCD96D05FBD13 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				ED1387C2AC27F80287806D85252C6F19 /* WPlayerKit.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -207,17 +192,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DE64D7978E95594582E429DEE0A760B2 /* WPlayerKit */ = {
+		EAAAD77B62BAD6670C430E05A3DD500A /* WPlayerKit */ = {
 			isa = PBXGroup;
 			children = (
-				C2692A2BC10DA393C64BB784C6E079C5 /* ReplaceMe.m */,
-				F8490E96EFF16083AAAFBFAADE465A25 /* WKitVersionLog.h */,
-				B6BD7EA078151C6BE0CBCD96D05FBD13 /* Frameworks */,
-				8E0ABC4F062408A0BF1FD97898645FDD /* Pod */,
-				AB047C449D2E642DD9E624D2D81FAD7E /* Support Files */,
+				E7BDC41923B9105E07C84923C7D858DC /* ReplaceMe.m */,
+				DF57793F1EC75C52D5D9FE372B36E873 /* WKitVersionLog.md */,
+				0E0C65123099D94CF9637D610FB9090A /* Frameworks */,
+				89CEE1913E0531DA28F56641A49CC83D /* Pod */,
+				F2BCC7A5FB975EEF01325CBCB0B40347 /* Support Files */,
 			);
 			name = WPlayerKit;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		F2BCC7A5FB975EEF01325CBCB0B40347 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5370F96E0D45ADD77E26638B7AA0229 /* WPlayerKit.modulemap */,
+				FDE01F05F1BB8004D49B3DBC0C549BA0 /* WPlayerKit-dummy.m */,
+				784EFECEA5F838A9AF321692ED3A88A7 /* WPlayerKit-Info.plist */,
+				C68ACAFFD04B2DC09C1BC13BECB81D11 /* WPlayerKit-prefix.pch */,
+				AE29B36D161D85562247971F5B817B98 /* WPlayerKit-umbrella.h */,
+				30DC9F6833B94B6BC31AA708D3638F68 /* WPlayerKit.debug.xcconfig */,
+				E07E3239B5FA4482BE90B50CE37E57A7 /* WPlayerKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WPlayerKit";
 			sourceTree = "<group>";
 		};
 		FA918AFDE0B4E29F36082DEF0EB89FCC /* Pods-WPlayerKit_Tests */ = {
@@ -247,20 +247,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E98240B380DDA2C7C9322A596CC06362 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0B2820E88F237BB393E352555227636 /* WPlayerKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F1F7D01CA545D6CD759B310D70B6472E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A28DB4803C359020F881E3F70526FCC5 /* Pods-WPlayerKit_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F554319093BE46B37C849AF2C7565B15 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				35758B9D6CCB0E2F76EC06C01F823E76 /* WKitVersionLog.h in Headers */,
-				C1259DC3095AE8FD1350E3F635E6715B /* WPlayerKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,12 +306,12 @@
 		};
 		AC002695E57ECDFF401E3AB1D5A27DF8 /* WPlayerKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F7C94651FAE6040449928D34C436D1DC /* Build configuration list for PBXNativeTarget "WPlayerKit" */;
+			buildConfigurationList = 79C0ED992D7857BCB35D1A2D830F12E5 /* Build configuration list for PBXNativeTarget "WPlayerKit" */;
 			buildPhases = (
-				F554319093BE46B37C849AF2C7565B15 /* Headers */,
-				3647F75C73D872574968D1102F230850 /* Sources */,
-				258BBAE6E302CE40F5E82562EA910624 /* Frameworks */,
-				BC958FD8341C8C8FB1C6FDA406C25B27 /* Resources */,
+				E98240B380DDA2C7C9322A596CC06362 /* Headers */,
+				123AB9F2F911DE2DA9FF8DA0C2AE57DB /* Sources */,
+				514C7A48658E2F31D7F5B67D0CD5F667 /* Frameworks */,
+				AF53F41D72680E40A86D06E2D4DEB507 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -367,7 +366,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC958FD8341C8C8FB1C6FDA406C25B27 /* Resources */ = {
+		AF53F41D72680E40A86D06E2D4DEB507 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -377,20 +376,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		123AB9F2F911DE2DA9FF8DA0C2AE57DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D96B7A5C79A0ECB2AB37B4BCBF3A947 /* ReplaceMe.m in Sources */,
+				12E25AC2B61CB16A062C353C4D329780 /* WKitVersionLog.md in Sources */,
+				D6F5908DC3EF6307E1EE9F24C1A40474 /* WPlayerKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2FD34A480A28EC9C345ABDEA079884D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AA726BB3582AFB5CA51D500614601EBC /* Pods-WPlayerKit_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3647F75C73D872574968D1102F230850 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				34927CA4FA728FF2BD2E680D3AA28BD2 /* ReplaceMe.m in Sources */,
-				C7C5445C05FE96C07170EC7CF4A34A37 /* WPlayerKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,37 +420,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0D5A95887C50990F082BD6287EF220B9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C977B24B81B72DE0C53240E5A3F3CCE /* WPlayerKit.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WPlayerKit/WPlayerKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WPlayerKit/WPlayerKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WPlayerKit/WPlayerKit.modulemap";
-				PRODUCT_MODULE_NAME = WPlayerKit;
-				PRODUCT_NAME = WPlayerKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		1ADABD8D975D650B5A07659BB5AB11F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4CB52BC88DF8DDB752B85D602E7CF21F /* Pods-WPlayerKit_Example.debug.xcconfig */;
@@ -483,6 +452,69 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		5B511AB204C20AEF9A0A3665A0CD4E15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30DC9F6833B94B6BC31AA708D3638F68 /* WPlayerKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WPlayerKit/WPlayerKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WPlayerKit/WPlayerKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WPlayerKit/WPlayerKit.modulemap";
+				PRODUCT_MODULE_NAME = WPlayerKit;
+				PRODUCT_NAME = WPlayerKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		607B0DD48424CC442F2082FC7ECEFE90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E07E3239B5FA4482BE90B50CE37E57A7 /* WPlayerKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WPlayerKit/WPlayerKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WPlayerKit/WPlayerKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WPlayerKit/WPlayerKit.modulemap";
+				PRODUCT_MODULE_NAME = WPlayerKit;
+				PRODUCT_NAME = WPlayerKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		677ABBFCC77EA4DA1C155AB8A72C5A39 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -576,38 +608,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		7F72E40FF0276D5610B21CC5A078C2EB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FABF224CC025D92933F40E6357200D97 /* WPlayerKit.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WPlayerKit/WPlayerKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WPlayerKit/WPlayerKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WPlayerKit/WPlayerKit.modulemap";
-				PRODUCT_MODULE_NAME = WPlayerKit;
-				PRODUCT_NAME = WPlayerKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -766,20 +766,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		79C0ED992D7857BCB35D1A2D830F12E5 /* Build configuration list for PBXNativeTarget "WPlayerKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B511AB204C20AEF9A0A3665A0CD4E15 /* Debug */,
+				607B0DD48424CC442F2082FC7ECEFE90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A3C53564A7291DDE19E0C14AD896B0A6 /* Build configuration list for PBXNativeTarget "Pods-WPlayerKit_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1ADABD8D975D650B5A07659BB5AB11F0 /* Debug */,
 				8F588466757E6A07C231E0171DD110FE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F7C94651FAE6040449928D34C436D1DC /* Build configuration list for PBXNativeTarget "WPlayerKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0D5A95887C50990F082BD6287EF220B9 /* Debug */,
-				7F72E40FF0276D5610B21CC5A078C2EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

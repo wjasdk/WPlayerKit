@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "WKitVersionLog.h"
 
 FOUNDATION_EXPORT double WPlayerKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char WPlayerKitVersionString[];
