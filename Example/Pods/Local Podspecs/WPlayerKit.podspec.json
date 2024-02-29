@@ -1,6 +1,6 @@
 {
   "name": "WPlayerKit",
-  "version": "1.0.1.2402281630",
+  "version": "1.0.1.2402281631",
   "summary": "P2P音视频直播SDK",
   "description": "P2P音视频直播SDK,提供直播、回放、消息推送等模块化SDK",
   "homepage": "https://github.com/wjasdk/WPlayerKit.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/wjasdk/WPlayerKit.git",
-    "tag": "1.0.1.2402281630"
+    "tag": "1.0.1.2402281631"
   },
   "platforms": {
     "ios": "11.0"

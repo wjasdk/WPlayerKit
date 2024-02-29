@@ -9,68 +9,66 @@
 /* Begin PBXBuildFile section */
 		002D71F2DE3C287E128004311C14F22B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		1732938F9EA8397933B4B88BA2F71F76 /* Pods-WPlayerKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 130FAB2024E798D19658137AB6492EC6 /* Pods-WPlayerKit_Example-dummy.m */; };
-		3B592D4B3AF5E84DAF3639FAAEE63A88 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 76842C17C7132B35CAB9410F00FC3A04 /* ReplaceMe.m */; };
-		420EDC632A7FFE04BF7527AF7EE1130E /* WPlayerKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C01B0301AB75ED58DB444AA500BF4D /* WPlayerKit-dummy.m */; };
+		33B082F7DE51329133B0E48543E6A241 /* WPlayerKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22E6E97116C36CCB23F2D7E7EA68D047 /* WPlayerKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		733D7E2F3657333D9524155793456724 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		7A32E25D8E874B067E2B31A4677256D5 /* test.rtf in Sources */ = {isa = PBXBuildFile; fileRef = 71256F8742EE7BCC6BAC7C51AB5E982D /* test.rtf */; };
 		A28DB4803C359020F881E3F70526FCC5 /* Pods-WPlayerKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1935A205F06C2B7963D8A7B27864B00 /* Pods-WPlayerKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A82BF55E98E96F34827591AE1DC56C80 /* Pods-WPlayerKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFAD13E723E8CAA357EF48A202DE1634 /* Pods-WPlayerKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA726BB3582AFB5CA51D500614601EBC /* Pods-WPlayerKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0DA9A10DD7DA26EAC6B5CA08E149D9 /* Pods-WPlayerKit_Tests-dummy.m */; };
-		BCBEF5BCC66C9DC5510210B9AA869013 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		C0B2820E88F237BB393E352555227636 /* WPlayerKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88E8D23E1F62836D50650EC2806C4D8D /* WPlayerKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D61865425DD907D041C123AC3DD5CBAC /* WPlayerKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A31772004C0EA2B42C245842E6209C9D /* WPlayerKit-dummy.m */; };
+		F0E2CD3B41EE3F90479B45F3B402592C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		FF9FE70DEDC6D24967136C2A7521B83A /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 707E48E92CBFFEAC2F428D862AE501DE /* ReplaceMe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8CC8CD4B5351A1065C9193E35D5BCCA0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC002695E57ECDFF401E3AB1D5A27DF8;
-			remoteInfo = WPlayerKit;
-		};
-		AAFAF69109613CF4CCE5A05418BE095A /* PBXContainerItemProxy */ = {
+		21B7B6EF6D08F20A6C1BE112287643BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2153292F77C7739AFBDAA78C51D4A582;
 			remoteInfo = "Pods-WPlayerKit_Example";
 		};
+		CB2BD6F483388C038B70EFE396736483 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC002695E57ECDFF401E3AB1D5A27DF8;
+			remoteInfo = WPlayerKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BCAFFAD687CEBF996B3219401163B30 /* WPlayerKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPlayerKit.debug.xcconfig; sourceTree = "<group>"; };
-		0F5887C568788EFB1FBA5C665FD8B515 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		130FAB2024E798D19658137AB6492EC6 /* Pods-WPlayerKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WPlayerKit_Example-dummy.m"; sourceTree = "<group>"; };
 		173751E6EE54B1CB51565AF244B89ED2 /* Pods-WPlayerKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPlayerKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		43A73654C1FCFEC3A8ABA92130771CFD /* WPlayerKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPlayerKit.release.xcconfig; sourceTree = "<group>"; };
+		1F3817F3C9B8DF2D49866D3370312A56 /* WPlayerKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WPlayerKit.modulemap; sourceTree = "<group>"; };
+		22E6E97116C36CCB23F2D7E7EA68D047 /* WPlayerKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPlayerKit-umbrella.h"; sourceTree = "<group>"; };
 		43F5A3ADFBB395345EEAF46854B8AB6D /* Pods-WPlayerKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WPlayerKit_Tests.modulemap"; sourceTree = "<group>"; };
 		449A5D9C88734BFCA90510C79B86C19F /* Pods-WPlayerKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPlayerKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		45D25F9130CD127610F5AEC76CB7844B /* Pods-WPlayerKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPlayerKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4CB52BC88DF8DDB752B85D602E7CF21F /* Pods-WPlayerKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPlayerKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		52C01B0301AB75ED58DB444AA500BF4D /* WPlayerKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WPlayerKit-dummy.m"; sourceTree = "<group>"; };
-		62355E44119248F1FC1B1C685BAE94C6 /* WPlayerKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPlayerKit-prefix.pch"; sourceTree = "<group>"; };
-		71256F8742EE7BCC6BAC7C51AB5E982D /* test.rtf */ = {isa = PBXFileReference; includeInIndex = 1; name = test.rtf; path = WPlayerKit/Classes/test.rtf; sourceTree = "<group>"; };
+		522F3E4969796FC22549A0571EB4BDA4 /* WPlayerKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WPlayerKit-Info.plist"; sourceTree = "<group>"; };
+		5CA6CA7818BFF869DFA7D63D3E78FCD1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		707E48E92CBFFEAC2F428D862AE501DE /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = WPlayerKit/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		76842C17C7132B35CAB9410F00FC3A04 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = WPlayerKit/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		7778C04901B7B27774A3426613D28F1F /* WPlayerKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPlayerKit.release.xcconfig; sourceTree = "<group>"; };
+		806A77C2C85EE5CB5FF71F4E0C40D35D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		86556E54F8736FD7204503AA36E81605 /* Pods-WPlayerKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WPlayerKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		88E8D23E1F62836D50650EC2806C4D8D /* WPlayerKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPlayerKit-umbrella.h"; sourceTree = "<group>"; };
-		9526547136F1E562467B57EB6ED401F9 /* WPlayerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WPlayerKit.framework; path = WPlayerKit/WPlayerKit.framework; sourceTree = "<group>"; };
+		925B234C231F6895B35EBC84FDE34DA1 /* WPlayerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WPlayerKit.framework; path = WPlayerKit/WPlayerKit.framework; sourceTree = "<group>"; };
+		95B85CFC962BF9E04D07AB43C4620E7B /* WPlayerKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPlayerKit-prefix.pch"; sourceTree = "<group>"; };
 		975B532457E71C2009F0424D3186717F /* Pods-WPlayerKit_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WPlayerKit_Example"; path = Pods_WPlayerKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9767C724DF6B000B7C62A7D7DD75D86D /* Pods-WPlayerKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPlayerKit_Tests-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A9B44E3A3811A31F3E0075B675768010 /* WPlayerKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WPlayerKit-Info.plist"; sourceTree = "<group>"; };
+		A31772004C0EA2B42C245842E6209C9D /* WPlayerKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WPlayerKit-dummy.m"; sourceTree = "<group>"; };
 		AC0B4FB9CB6F35BDE94F5325B10E65A5 /* Pods-WPlayerKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WPlayerKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AD9B939473CBF543D201EC04CB5580FC /* Pods-WPlayerKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPlayerKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B2FC99F09406B3B135F680AE7B2C3B43 /* WPlayerKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WPlayerKit.modulemap; sourceTree = "<group>"; };
+		B140AF82C07C74E1DF11A3FD694E9A25 /* WPlayerKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WPlayerKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B7E05B8AF92489BFCC4DCE7CC88BE940 /* WPlayerKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPlayerKit.debug.xcconfig; sourceTree = "<group>"; };
 		BFAD13E723E8CAA357EF48A202DE1634 /* Pods-WPlayerKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WPlayerKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		CBF77C436ABFC94B76B3B8E65F1A8C79 /* WPlayerKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WPlayerKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CC1AB9DF9AAEF7295D51AD1770BE5113 /* Pods-WPlayerKit_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WPlayerKit_Tests"; path = Pods_WPlayerKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1935A205F06C2B7963D8A7B27864B00 /* Pods-WPlayerKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WPlayerKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D54F38AC02E2D060BE4669E353FF3417 /* Pods-WPlayerKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPlayerKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		D809A568A98E46924FF1BAAE323D4244 /* Pods-WPlayerKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WPlayerKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		DB0DA9A10DD7DA26EAC6B5CA08E149D9 /* Pods-WPlayerKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WPlayerKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		DBE81033D90D68A7A74C8B3BF93F3649 /* WPlayerKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WPlayerKit; path = WPlayerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E51F6DD1EA1D8FCA63F3CFCF238399AF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		F37588DD82CBEA7FE8CC987093CAC1B1 /* Pods-WPlayerKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPlayerKit_Example-Info.plist"; sourceTree = "<group>"; };
 		F8E1B434075048AD62B5108F18B86DD4 /* Pods-WPlayerKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WPlayerKit_Example.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,11 +90,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		514C7A48658E2F31D7F5B67D0CD5F667 /* Frameworks */ = {
+		D951A7B6DFB60FF74AA5DA1429FF0AC8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCBEF5BCC66C9DC5510210B9AA869013 /* Foundation.framework in Frameworks */,
+				F0E2CD3B41EE3F90479B45F3B402592C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,22 +110,24 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3D3F9A20A9C86D36915158ECCDE8C9FA /* Pod */ = {
+		1394335A7DE3423EA03A0A72ABAF5A1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0F5887C568788EFB1FBA5C665FD8B515 /* LICENSE */,
-				E51F6DD1EA1D8FCA63F3CFCF238399AF /* README.md */,
-				CBF77C436ABFC94B76B3B8E65F1A8C79 /* WPlayerKit.podspec */,
+				925B234C231F6895B35EBC84FDE34DA1 /* WPlayerKit.framework */,
 			);
-			name = Pod;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4E4756AB6B62C81ECBE9EFFEC7E4511F /* Development Pods */ = {
+		493D7235B2E4125E674BC256356AC5FC /* WPlayerKit */ = {
 			isa = PBXGroup;
 			children = (
-				E34118C845D5BE6BCC9A775BFA160486 /* WPlayerKit */,
+				707E48E92CBFFEAC2F428D862AE501DE /* ReplaceMe.m */,
+				1394335A7DE3423EA03A0A72ABAF5A1A /* Frameworks */,
+				E3EBD3C5BD25B7372F9DA6ADA8CF9CCD /* Pod */,
+				C53B5F7CE963952DCF50451CC0651E01 /* Support Files */,
 			);
-			name = "Development Pods";
+			name = WPlayerKit;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		5628B8F1374BD66841139CB41F5C9BAF /* Pods-WPlayerKit_Example */ = {
@@ -155,29 +155,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		63F36FBC96A1AEBC18B06F6D8A18E8A9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9526547136F1E562467B57EB6ED401F9 /* WPlayerKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		76DAE81A87E4276B5BCD6FC9DBCCAD7C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B2FC99F09406B3B135F680AE7B2C3B43 /* WPlayerKit.modulemap */,
-				52C01B0301AB75ED58DB444AA500BF4D /* WPlayerKit-dummy.m */,
-				A9B44E3A3811A31F3E0075B675768010 /* WPlayerKit-Info.plist */,
-				62355E44119248F1FC1B1C685BAE94C6 /* WPlayerKit-prefix.pch */,
-				88E8D23E1F62836D50650EC2806C4D8D /* WPlayerKit-umbrella.h */,
-				0BCAFFAD687CEBF996B3219401163B30 /* WPlayerKit.debug.xcconfig */,
-				43A73654C1FCFEC3A8ABA92130771CFD /* WPlayerKit.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/WPlayerKit";
-			sourceTree = "<group>";
-		};
 		8B44A4FEFAEA5BC73B04220929F2B369 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,11 +165,34 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		9B14BFDB024A99DD1E23267EE638DF53 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				493D7235B2E4125E674BC256356AC5FC /* WPlayerKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C53B5F7CE963952DCF50451CC0651E01 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F3817F3C9B8DF2D49866D3370312A56 /* WPlayerKit.modulemap */,
+				A31772004C0EA2B42C245842E6209C9D /* WPlayerKit-dummy.m */,
+				522F3E4969796FC22549A0571EB4BDA4 /* WPlayerKit-Info.plist */,
+				95B85CFC962BF9E04D07AB43C4620E7B /* WPlayerKit-prefix.pch */,
+				22E6E97116C36CCB23F2D7E7EA68D047 /* WPlayerKit-umbrella.h */,
+				B7E05B8AF92489BFCC4DCE7CC88BE940 /* WPlayerKit.debug.xcconfig */,
+				7778C04901B7B27774A3426613D28F1F /* WPlayerKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WPlayerKit";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				4E4756AB6B62C81ECBE9EFFEC7E4511F /* Development Pods */,
+				9B14BFDB024A99DD1E23267EE638DF53 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				8B44A4FEFAEA5BC73B04220929F2B369 /* Products */,
 				0AAECC297CAE60621319AD1E7B515C14 /* Targets Support Files */,
@@ -207,17 +207,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E34118C845D5BE6BCC9A775BFA160486 /* WPlayerKit */ = {
+		E3EBD3C5BD25B7372F9DA6ADA8CF9CCD /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				76842C17C7132B35CAB9410F00FC3A04 /* ReplaceMe.m */,
-				71256F8742EE7BCC6BAC7C51AB5E982D /* test.rtf */,
-				63F36FBC96A1AEBC18B06F6D8A18E8A9 /* Frameworks */,
-				3D3F9A20A9C86D36915158ECCDE8C9FA /* Pod */,
-				76DAE81A87E4276B5BCD6FC9DBCCAD7C /* Support Files */,
+				5CA6CA7818BFF869DFA7D63D3E78FCD1 /* LICENSE */,
+				806A77C2C85EE5CB5FF71F4E0C40D35D /* README.md */,
+				B140AF82C07C74E1DF11A3FD694E9A25 /* WPlayerKit.podspec */,
 			);
-			name = WPlayerKit;
-			path = ../..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		FA918AFDE0B4E29F36082DEF0EB89FCC /* Pods-WPlayerKit_Tests */ = {
@@ -239,19 +236,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		35BF50D7D0A66A41DDE0379EEA5DCA00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33B082F7DE51329133B0E48543E6A241 /* WPlayerKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62B0E1B24D97D6345030C1E2E76A7C24 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A82BF55E98E96F34827591AE1DC56C80 /* Pods-WPlayerKit_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E98240B380DDA2C7C9322A596CC06362 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C0B2820E88F237BB393E352555227636 /* WPlayerKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +275,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D72898D9C9E60CC55EA899641904E76E /* PBXTargetDependency */,
+				F54C555128D031255A6A31C31C332D49 /* PBXTargetDependency */,
 			);
 			name = "Pods-WPlayerKit_Example";
 			productName = Pods_WPlayerKit_Example;
@@ -297,7 +294,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				68350D252BB35C8DFE696BF0673F5691 /* PBXTargetDependency */,
+				451B0879D63C8D48FE81AA89DD737172 /* PBXTargetDependency */,
 			);
 			name = "Pods-WPlayerKit_Tests";
 			productName = Pods_WPlayerKit_Tests;
@@ -306,12 +303,12 @@
 		};
 		AC002695E57ECDFF401E3AB1D5A27DF8 /* WPlayerKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79C0ED992D7857BCB35D1A2D830F12E5 /* Build configuration list for PBXNativeTarget "WPlayerKit" */;
+			buildConfigurationList = 16518527C71A9E9506F94E483E5BF622 /* Build configuration list for PBXNativeTarget "WPlayerKit" */;
 			buildPhases = (
-				E98240B380DDA2C7C9322A596CC06362 /* Headers */,
-				4352DC9C7486D83E6FE508F0795C42E0 /* Sources */,
-				514C7A48658E2F31D7F5B67D0CD5F667 /* Frameworks */,
-				AF53F41D72680E40A86D06E2D4DEB507 /* Resources */,
+				35BF50D7D0A66A41DDE0379EEA5DCA00 /* Headers */,
+				48493AB3EE643DF45920E4DE7A089026 /* Sources */,
+				D951A7B6DFB60FF74AA5DA1429FF0AC8 /* Frameworks */,
+				1AAC085EE28CC5BA24ABF88082813394 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -366,7 +363,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF53F41D72680E40A86D06E2D4DEB507 /* Resources */ = {
+		1AAC085EE28CC5BA24ABF88082813394 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -392,30 +389,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4352DC9C7486D83E6FE508F0795C42E0 /* Sources */ = {
+		48493AB3EE643DF45920E4DE7A089026 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B592D4B3AF5E84DAF3639FAAEE63A88 /* ReplaceMe.m in Sources */,
-				7A32E25D8E874B067E2B31A4677256D5 /* test.rtf in Sources */,
-				420EDC632A7FFE04BF7527AF7EE1130E /* WPlayerKit-dummy.m in Sources */,
+				FF9FE70DEDC6D24967136C2A7521B83A /* ReplaceMe.m in Sources */,
+				D61865425DD907D041C123AC3DD5CBAC /* WPlayerKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		68350D252BB35C8DFE696BF0673F5691 /* PBXTargetDependency */ = {
+		451B0879D63C8D48FE81AA89DD737172 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-WPlayerKit_Example";
 			target = 2153292F77C7739AFBDAA78C51D4A582 /* Pods-WPlayerKit_Example */;
-			targetProxy = AAFAF69109613CF4CCE5A05418BE095A /* PBXContainerItemProxy */;
+			targetProxy = 21B7B6EF6D08F20A6C1BE112287643BB /* PBXContainerItemProxy */;
 		};
-		D72898D9C9E60CC55EA899641904E76E /* PBXTargetDependency */ = {
+		F54C555128D031255A6A31C31C332D49 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WPlayerKit;
 			target = AC002695E57ECDFF401E3AB1D5A27DF8 /* WPlayerKit */;
-			targetProxy = 8CC8CD4B5351A1065C9193E35D5BCCA0 /* PBXContainerItemProxy */;
+			targetProxy = CB2BD6F483388C038B70EFE396736483 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -453,9 +449,9 @@
 			};
 			name = Debug;
 		};
-		5B511AB204C20AEF9A0A3665A0CD4E15 /* Debug */ = {
+		333454FBEEFEF41DCE4B4C4275C3F847 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BCAFFAD687CEBF996B3219401163B30 /* WPlayerKit.debug.xcconfig */;
+			baseConfigurationReference = B7E05B8AF92489BFCC4DCE7CC88BE940 /* WPlayerKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -484,9 +480,9 @@
 			};
 			name = Debug;
 		};
-		607B0DD48424CC442F2082FC7ECEFE90 /* Release */ = {
+		51B5137274D3D332DF14BBD87CA7023D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43A73654C1FCFEC3A8ABA92130771CFD /* WPlayerKit.release.xcconfig */;
+			baseConfigurationReference = 7778C04901B7B27774A3426613D28F1F /* WPlayerKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -748,6 +744,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		16518527C71A9E9506F94E483E5BF622 /* Build configuration list for PBXNativeTarget "WPlayerKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				333454FBEEFEF41DCE4B4C4275C3F847 /* Debug */,
+				51B5137274D3D332DF14BBD87CA7023D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -762,15 +767,6 @@
 			buildConfigurations = (
 				677ABBFCC77EA4DA1C155AB8A72C5A39 /* Debug */,
 				D83BA5918970F0765657B340E3A25519 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		79C0ED992D7857BCB35D1A2D830F12E5 /* Build configuration list for PBXNativeTarget "WPlayerKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B511AB204C20AEF9A0A3665A0CD4E15 /* Debug */,
-				607B0DD48424CC442F2082FC7ECEFE90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
