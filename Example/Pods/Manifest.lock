@@ -1,5 +1,5 @@
 PODS:
-  - WPlayerKit (1.0.1.2402281634)
+  - WPlayerKit (2.7.0.2403011740)
 
 DEPENDENCIES:
   - WPlayerKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WPlayerKit: a9793a8eecd6ca547f7592ea41ec84d14f831277
+  WPlayerKit: e7ede9436578af9f4bac91048048ca33c856a656
 
 PODFILE CHECKSUM: 71ae93342b515c5b30ace01090a4652580028394
 
