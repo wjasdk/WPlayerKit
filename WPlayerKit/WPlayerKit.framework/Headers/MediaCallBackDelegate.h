@@ -87,8 +87,8 @@ typedef enum{
     BaseEvent_Code_Audio_Is_Used_By_Other_Apps_End = 0x20002, //131074，Audio is the other end of the APP
     BaseEvent_Code_SDK_MQTT_State_Error       = 0x20003, //131075，mqtt连接状态失败
     BaseEvent_Code_SDK_Authentication_Timeout = 0x20005, //131077，The sdk internal mqtt authentication timeout（sdk内部mqtt鉴权超时）
-    
-    
+    BaseEvent_Code_No_Play_Del_Stream         = 0x20013, //131091，If no video is loaded, the stream is automatically shut down（未加载出视频，主动关流）
+ 
 }ZDKCallBackEvent;
 
 
