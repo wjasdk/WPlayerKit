@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  P2P音视频直播SDK,提供直播、回放、消息推送等模块化SDK
+  P2P音视频直播SDK,提供直播、回放、消息推送等模块化SDK库
                        DESC
 
   s.homepage         = 'https://github.com/wjasdk/WPlayerKit.git'
